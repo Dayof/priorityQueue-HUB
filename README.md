@@ -4,7 +4,8 @@
 
 1. Descrição
 2. Dados do projeto
-3. Instalação e execução
+3. Instalação
+4. Execução
 
 ## Conteúdo
 
@@ -15,13 +16,12 @@ Trabalho final da matéria de Sistemas de Informação, turma B, ministrada pelo
 ### 2. Dados do projeto
 
 Título do projeto:
-* **prioriryQueue**
+Priority Queue
 
 Professor:
-**Edison Ishikawa**
+Edison Ishikawa
 
-Departamento:
-**Departamento de Ciência da Computação**
+Departamento: Departamento de Ciência da Computação
 
 Equipes:
 * Cadastro de registros e entidades - 1
@@ -29,15 +29,24 @@ Equipes:
 
 Alunos Envolvidos:
 * Equipe 1:
-  * Dayanne Fernandes - 13/0107191
-  * Orlando - 
+  * Carlos Trufini
+    * Matrícula: ipox@live.com
+    * E-mail: 
+  * Matheus Vieira
+    * Matrícula: 
+    * E-mail: matheusvf1234@gmail.com
+  
 * Equipe 2:
-  * Carlos Trufini - 
-  * Matheus Vieira - 
+  * Dayanne Fernandes
+    * Matrícula: 13/0107191
+    * E-mail: dayannefernandesc@gmail.com
+  * Orlando 
+    * Matrícula:
+    * E-mail: ojfsilva@uol.com.br
 
-### 4. Instalação e execução
+### 3. Instalação
 
-Para executar o programa, siga as instruções abaixo.
+Siga as instruções abaixo.
 
 1. Clone o repositório com: 
   `git clone https://github.com/Dayof/priorityQueue-HUB.git`
@@ -72,3 +81,11 @@ Para executar o programa, siga as instruções abaixo.
 		`$ tar xzvf Django-1.6.2.tar.gz`
 		`$ cd Django-1.6.2`
 		`$ sudo python setup.py install`
+
+### 4. Execução
+
+Para executar o server pela primeira vez, acesse a pasta HUBqueue dentro da pasta do projeto do git, vá ao terminal e execute os seguinte comandos:
+  `python manage.py migrate`
+  `python manage.py runserver`
+
+

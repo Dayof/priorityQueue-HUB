@@ -29,19 +29,19 @@ Equipes:
 
 Alunos Envolvidos:
 * Equipe 1:
-  * Carlos Trufini
-    * Matrícula: ipox@live.com
-    * E-mail: 
-  * Matheus Vieira
-    * Matrícula: 
+  * Carlos André Velozo Trufini 
+    * Matrícula: 13/0105155
+    * E-mail: ipox@live.com
+  * Matheus Vieira Fernandes 
+    * Matrícula: 13/0126861
     * E-mail: matheusvf1234@gmail.com
   
 * Equipe 2:
   * Dayanne Fernandes
     * Matrícula: 13/0107191
     * E-mail: dayannefernandesc@gmail.com
-  * Orlando 
-    * Matrícula:
+  * Orlando José Ferreira da Silva 
+    * Matrícula: 14/0086021
     * E-mail: ojfsilva@uol.com.br
 
 ### 3. Instalação
@@ -85,7 +85,7 @@ Siga as instruções abaixo.
 ### 4. Execução
 
 Para executar o server pela primeira vez, acesse a pasta HUBqueue dentro da pasta do projeto do git, vá ao terminal e execute os seguinte comandos:
-  `python manage.py migrate`
-  `python manage.py runserver`
+  * `python manage.py migrate`
+  * `python manage.py runserver`
 
 

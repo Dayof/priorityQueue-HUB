@@ -1,2 +1,11 @@
+*.class
+*.pyc
+*.pyo
+*.db
+HUBqueue/node_modules/*
+HUBqueue/HUBqueue/dev/static/lib/*
+HUBqueue/HUBqueue/www/*
+HUBqueue/HUBqueue/database/hub.db
+HUBqueue/HUBqueue/*.pyc
 # Ignore Mac DS_Store files
 .DS_Store

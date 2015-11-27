@@ -46,12 +46,5 @@ class Cirurgia(models.Model):
     instrumentos_especificos = models.FloatField()
     observacoes = models.TextField()
     cirurgia realizada = models.BooleanField()
-    sangue = models.BooleanField()
-    UTI = models.BooleanField()
-    videolaparoscopio = models.BooleanField()
-    ortese_protese = models.BooleanField()
-    congelacao = models.BooleanField()
-    microscopio = models.BooleanField()
-    escopia = models.BooleanField()
 
   

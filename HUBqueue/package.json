@@ -5,7 +5,7 @@
     "Dayof <dayannefernandesc@gmail.com>"
   ],
   "description": "-",
-  "main": "HUBqueue/dev/home.html",
+  "main": "HUBqueue/dev/templates/Ground/index.html",
   "scripts": {
     "prepublish": "grunt dist",
     "test": "grunt test",

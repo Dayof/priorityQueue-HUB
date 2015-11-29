@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 
             localDependencies: {
                 files: {
-                    '<%= app.dev %>/home.html': [
+                    '<%= app.dev %>/templates/Ground/index.html': [
                         // bootstrap usa less ao invés de css como padrão
                         '<%= app.vendor %>/bootstrap/dist/css/bootstrap.min.css',
                         '<%= app.dev %>/static/styles/*.css',
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 
             bowerDependencies: {
                 files: {
-                    '<%= app.dev %>/home.html': ['bower.json']
+                    '<%= app.dev %>/templates/Ground/index.html': ['bower.json']
                 }
             }
         },

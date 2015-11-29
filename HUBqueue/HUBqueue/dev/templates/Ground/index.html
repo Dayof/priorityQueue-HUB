@@ -21,8 +21,16 @@
     </head>
     <body ng-controller="homeCtrl">
 
+        <div class="header">
+            {% include "Ground/header.html" %}
+        </div>
+
         <div class="container-fluid">
             {% block content %}{% endblock %}
+        </div>
+
+        <div class="footer">
+            {% include "Ground/footer.html" %}
         </div>
 
         <!-- build:js scripts/vendor.js -->

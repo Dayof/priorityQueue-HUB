@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
-def handler(request):
-    return render(request, 'Register/reg_acc.html', {})
+class UiRegister:
+
+    def run(self,request):
+        if request.method == "GET":
+            return render(request, 'Register/reg_acc.html', {})

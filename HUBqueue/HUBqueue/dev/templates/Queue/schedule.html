@@ -1,6 +1,15 @@
 {% extends "Ground/index.html" %}
 {% load staticfiles %}
 
+{% block title %} Agenda {% endblock %}
+
 {% block content %}
-<center><h1>AGENDA</h1></center>
+
+<div ng-controller="ScheduleCtrl">
+    <center><h1>AGENDA</h1></center>
+
+    <div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources" ></div>
+
+</div>
+
 {% endblock %}

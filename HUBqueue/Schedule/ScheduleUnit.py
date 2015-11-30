@@ -1,4 +1,8 @@
 from django.shortcuts import render
 
-def handler(request):
-    return render(request, 'Queue/schedule.html', {})
+class UiSchedule:
+
+    def run(self,request):
+        if request.method == "GET":
+            return render(request, 'Queue/schedule.html', {})
+            

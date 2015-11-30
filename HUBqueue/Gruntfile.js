@@ -51,8 +51,10 @@ module.exports = function(grunt) {
                         '<%= app.vendor %>/bootstrap/dist/css/bootstrap.min.css',
                         '<%= app.dev %>/static/styles/*.css',
                         '<%= app.dev %>/static/app.js',
-                        '<%= app.dev %>/static/controllers/*.js'
+                        '<%= app.dev %>/static/controllers/*.js',
                         //'<%= app.dev %>/static/scripts/*.js'
+                        '<%= app.dev %>/static/lib/angular-cookies/bower-angular-cookies-1.4.8/angular-cookies.js',
+                        '<%= app.dev %>/static/lib/fullcalendar/dist/gcal.js'
                     ]
                 }
             },

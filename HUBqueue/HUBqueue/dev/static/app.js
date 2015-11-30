@@ -5,10 +5,11 @@
         'ngAnimate', 
         'ngSanitize', 
         'ui.bootstrap',
-        'ngCookies'
-    ], function($interpolateProvides){
-        $interpolateProvides.startSymbol('{[{');
-        $interpolateProvides.endSymbol('}]}');
+        'ngCookies',
+        'ui.calendar'
+    ], function($interpolateProvider){
+        $interpolateProvider.startSymbol('{[{');
+        $interpolateProvider.endSymbol('}]}');
     })
     .run(function run($http, $cookies){
         $http.defaults.headers.post['X-CSRFToken'] = $cookies['csrftoken'];

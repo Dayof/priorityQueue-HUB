@@ -1,0 +1,81 @@
+{% extends "Ground/index.html" %}
+{% load staticfiles %}
+
+{% block title %} Página Inicial {% endblock %}
+
+{% block content %}
+<div ng-controller="HomeCtrl">
+    <center><h1>LOGIN</h1></center>
+
+    <div class="col-md-4"></div>
+    <div class="wb-signup col-md-4">    
+        <form   name="signup-form" 
+                ng-submit="submitSignUp()"
+                role="form"
+                class="form-horizontal"
+                novalidate>
+
+            <div class="alert alert-danger" role="alert" ng-show="signupError">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only" ng-bind="signupError">Error</span>
+            </div>
+                    
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input  type="email"
+                            class="form-control"
+                            id="sign-mail"
+                            ng-model="sign.mail"
+                            placeholder="Enter e-mail"
+                            required/> 
+                    <br/>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input  type="password"
+                            class="form-control"
+                            ng-model="sign.pass"
+                            placeholder="Enter password"
+                            required/> 
+                    <br/>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+             <div class="form-group">
+                <div class="col-md-2"></div>
+                    <center>
+                        <div class="col-md-8">
+                            <input  type="submit"
+                                    class="btn btn-primary"
+                                    value="Sign Up"/>
+                        </div>
+                    </center>
+                <div class="col-md-2"></div>
+            </div>
+        
+        </form>
+
+        <div class="col-md-2 col-md-offset-5 text-center">
+            <div class="btn-group" uib-dropdown is-open="status.isopen">
+                <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+                Perfil 
+                <span class="caret"></span>
+                </button>
+                <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
+                    <li role="menuitem"><a href="register#">Regulador</a></li>
+                    <li role="menuitem"><a href="schedule#">Médico</a></li>
+                    <li class="divider"></li>
+                    <li role="menuitem"><a href="#">Adm</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+{% endblock %}

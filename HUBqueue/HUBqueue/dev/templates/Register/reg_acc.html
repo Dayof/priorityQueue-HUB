@@ -4,5 +4,20 @@
 {% block title %} Registro {% endblock %}
 
 {% block content %}
-<center><h1>REGISTRO</h1></center>
+<div ng-controller="RegisterCtrl">
+    <center><h1>REGISTRO</h1></center>
+
+    <div class="row hub-cont-reg">
+        <div class="col-xs-6 col-md-4"><center>
+            <a href="patient#" role="button" class="btn btn-success btn-large hub-btn-register">PACIENTE</a></center>
+        </div>
+        <div class="col-xs-6 col-md-4"><center>
+            <a href="medic#" role="button" class="btn btn-success btn-large hub-btn-register">MÉDICO</a></center>
+        </div>
+        <div class="col-xs-6 col-md-4"><center>
+            <a href="regulador#" role="button" class="btn btn-success btn-large hub-btn-register">REGULADOR</a></center>
+        </div>
+    </div>
+    
+</div>
 {% endblock %}

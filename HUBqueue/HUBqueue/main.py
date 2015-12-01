@@ -6,4 +6,4 @@ class UiMain:
 
     def run(self,request):
         if request.method == "GET":
-            return render(request, 'Ground/index.html', {})
+            return render(request, 'Register/home.html', {})

@@ -1,0 +1,80 @@
+{% extends "Ground/index.html" %}
+{% load staticfiles %}
+
+{% block title %} Registro {% endblock %}
+
+{% block content %}
+<div ng-controller="ScheduleCtrl">
+    <center><h1>REGISTRO DE PACIENTES</h1></center>
+
+    <div class="col-md-4"></div>
+    <div class="col-md-4 hub-cont-acc">    
+        <form   name="signup-form" 
+                ng-submit="submitSignUp()"
+                role="form"
+                class="form-horizontal"
+                novalidate>
+
+            <div class="alert alert-danger" role="alert" ng-show="signupError">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only" ng-bind="signupError">Error</span>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input  type="name"
+                            class="form-control"
+                            ng-model="sign.name"
+                            placeholder="Insira seu nome completo"
+                            required/> 
+                    <br/>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <input  type="adress"
+                            class="form-control"
+                            id="sign-adress"
+                            ng-model="sign.adress"
+                            placeholder="Insira seu endereço"
+                            required/> 
+                    <br/>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <input  type="bairro"
+                                class="form-control"
+                                ng-model="sign.bairro"
+                                placeholder="Insira seu bairro"
+                                required/> 
+                        <br/>
+                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <center>
+                    <div class="col-md-8">
+                        <input  type="submit"
+                                class="btn btn-primary"
+                                value="Sign Up"/>
+                    </div>
+                </center>
+                <div class="col-md-2"></div>
+            </div>
+            
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+
+</div>
+{% endblock %}

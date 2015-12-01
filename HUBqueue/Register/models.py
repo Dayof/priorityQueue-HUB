@@ -1,13 +1,15 @@
+#coding: utf-8
+
 from django.db import models
 
 class Paciente(models.Model):
-    nro_pedido = models.IntegerField() #ver se vai usar AutoField
+    nro_pedido = models.IntegerField() # ver se vai usar AutoField
     data_cadastro = models.DateTimeField('Data do Cadastro')
     data_cirurgia = models.DateTimeField('Data da Cirurgia')
     nome = models.CharField(max_length=50)
     telefone = models.CharField(max_length=18)
     idade = models.IntegerField();
-    sexo = models.IntegerField(); #0: Mulher, 1: Homem
+    sexo = models.IntegerField(); # 0: Mulher, 1: Homem
     data_de_nascimento = models.DateTimeField('Data de Nascimento')
     nro_SUS = models.IntegerField()
     nome_mae = models.CharField(max_length=50)
@@ -24,10 +26,10 @@ class Medico(models.Model):
     CRM = models.IntegerField()
     telefone = models.CharField(max_length=18)
     email = models.CharField(max_length=40)
-    rec_med_aux = models.BooleanField() #Receberá Médico Auxiliar
-    med_aux = models.CharField(max_length=50) #Nome do médico auxiliar se a opção a cima for igual a sim
-    equipe_aux =  models.BooleanField() #Outra equipe médica participará da cirurgia
-    CID = models.IntegerField() #???
+    rec_med_aux = models.BooleanField() # Receberá Médico Auxiliar
+    med_aux = models.CharField(max_length=50) # Nome do médico auxiliar se a opção a cima for igual a sim
+    equipe_aux =  models.BooleanField() # Outra equipe médica participará da cirurgia
+    CID = models.IntegerField() # ???
 
     
 class Cirurgia(models.Model):

@@ -10,18 +10,18 @@
 
         <!-- build:css styles/vendor.css -->
             <!-- injector:bowercss -->
-            <link rel="stylesheet" href="/static/lib/bootstrap-css-only/css/bootstrap.css">
             <link rel="stylesheet" href="/static/lib/fullcalendar/dist/fullcalendar.css">
             <!-- endinjector -->
         <!-- endbuild -->
 
         <!-- build:css styles/custom.css -->
             <!-- injector:css -->
+            <link rel="stylesheet" href="/static/lib/bootstrap/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="/static/styles/queue.css">
             <!-- endinjector -->
         <!-- endbuild -->
     </head>
-    <body ng-controller="homeCtrl" data-spy="scroll">
+    <body data-spy="scroll">
 
         <div class="header">
             {% include "Ground/header.html" %}
@@ -41,6 +41,7 @@
             <script src="/static/lib/angular/angular.js"></script>
             <script src="/static/lib/angular-route/angular-route.js"></script>
             <script src="/static/lib/json2/json2.js"></script>
+            <script src="/static/lib/bootstrap/dist/js/bootstrap.js"></script>
             <script src="/static/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
             <script src="/static/lib/angular-sanitize/angular-sanitize.js"></script>
             <script src="/static/lib/angular-animate/angular-animate.js"></script>

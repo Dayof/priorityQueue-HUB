@@ -16,6 +16,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^register/$', UiRegister.run),
+    url(r'^register/(?P<model>\w{3,25})/$', UiRegister.run),
     url(r'^schedule/$', UiSchedule.run),
     url(r'^$', UiMain.run),
 )
